@@ -17,7 +17,7 @@ C# language features supports all
 
 --- 
 
-## The concept of Abstraction 
+# The concept of Abstraction 
 
 1. Think about the essential concepts, not the background details
 
@@ -37,7 +37,7 @@ C# language features supports all
 
 - exposing class functionalities, The user of the class can interact with, without requiring that the user how the class works.
 
-# CAR
+# Car
 ## Example - Abstraction applied on car
 
 when we are driving a car we are working with abstraction
@@ -109,7 +109,7 @@ Relevant for the application (ability to perform work) that will become public i
 Age
 Perform work
 
---
+---
  
 Structure of the class we'll need to create
 
@@ -180,6 +180,58 @@ public class car
 ```
 
 
---
+---
+
+# Inheritance
+
+1. Inherit features from other classes
+* understanding dog is an animal, and poodle is a more specific type of dog
+
+2. Create hierarchy
+    • Is-A relation
+
+- we implicitly putting in a hierarchy going from more generic to more specific.
+- They will inherit features from there parents or from parent.
+- we define this code in higher level so that we can reuse, instead duplicating the code.
+
+3. Improve reuse of code between parent and child class
+- child class is already built on parent has already defined.
+
+4. Child class can extend functionality and attributes
+- will also typically extend this  with it's own functionality and data.
+`
+    inheritance allows us to define common functionality at higher-level. thereby allowing inheritors to reuse the functionality and extend when needed.
+`
+
+
+# Car
+
+Applied inheritance on  a car
+
+
+
+```c#
+public class Car
+{
+    private int maxSpeed;
+
+    public int MaxSpeed { get => maxSpeed; set => maxSpeed = value; }
+
+    public void Drive()
+    {
+    }
+}
+
+public class SportsCar : Car
+{
+    private bool isRoofOpen;
+}
+```
+
+
+
+
+
+
 
 
