@@ -179,7 +179,6 @@ public class car
 }
 ```
 
-
 ---
 
 # Inheritance
@@ -205,10 +204,7 @@ public class car
 
 
 # Car
-
 Applied inheritance on  a car
-
-
 
 ```c#
 public class Car
@@ -229,9 +225,31 @@ public class SportsCar : Car
 ```
 
 
+# Polymorphism
+
+1. Allow methods to execute differently
 
 
+2. virtual and override keywords in C#
 
 
+3. On objects of different types, we can invoke the same methods
 
+
+C# example 
+
+```c#
+public class Car
+{
+    public virtual void Drive()
+    { }
+}
+public class ElectricCar : Car
+{
+    public override void Drive()
+    {
+        base.Drive(); // base keyword used to call the base class function/method.
+    }
+}
+```
 
