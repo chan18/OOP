@@ -1,10 +1,10 @@
 using OOADCsharp;
 
-namespace Test.CarTest;
+namespace OOPADTest;
 
 
 [TestFixture]
-public abstract class CarTestBase 
+public abstract class Given_a_Car 
 {
     protected Car SUT {get; set;}
 

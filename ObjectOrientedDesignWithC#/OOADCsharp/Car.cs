@@ -1,7 +1,6 @@
 
 namespace OOADCsharp;
 
-
 public class Car
 {
     public string Make {get; set;}
