@@ -27,6 +27,41 @@ A method takes an animal will gladly accept a dog or a lizard.
 - Object Interchangeability
 
 
+```mermaid
+classDiagram
+    class car
+    {
+        +Make : string
+        +Model : string
+        +SteeringPosition : float
+        +ThrottlePosition : float
+        +BreakPosition : float
+        +Start()
+        +Stop()        
+    }
+```
+
+```c#
+public class Car
+{
+    public string Make {get; set;}
+    public string Model {get; set;}
+    public float SteeringPositoin {get; set;}
+    public float ThrottlePosition {get; set;}
+    public float BreakPosition {get; set;}
+
+    public bool Start()
+    {
+        return true;
+    }
+
+    public bool Stop()
+    {
+        return false;
+    }
+}
+```
+
 
 # SOLID principles
 
