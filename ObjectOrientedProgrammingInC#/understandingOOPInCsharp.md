@@ -1,5 +1,16 @@
 # Working with classes and Objects
 
+## Types of CTS
+class
+interface
+
+enumeration
+delegate
+
+struct
+records
+
+
 # The Principles of object-oriented design
 
 * structure classes in object oriented way. We have to relay on principles 
@@ -198,9 +209,11 @@ public class car
 
 4. Child class can extend functionality and attributes
 - will also typically extend this  with it's own functionality and data.
+
 `
     inheritance allows us to define common functionality at higher-level. thereby allowing inheritors to reuse the functionality and extend when needed.
 `
+
 
 
 # Car
@@ -252,4 +265,5 @@ public class ElectricCar : Car
     }
 }
 ```
+
 
